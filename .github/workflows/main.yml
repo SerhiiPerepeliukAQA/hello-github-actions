@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: echo "The operating system on the runner is $env:RUNNER_OS."
-      - run: echo ${{ github.event.pull_request.head.ref }}
+      - run: echo ${{ github.event }}
       - run: echo "${{ github.event.pull_request.head.ref }}"     
       - run: echo $env.GITHUB_REPOSITORY
