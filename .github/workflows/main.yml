@@ -12,3 +12,13 @@ jobs:
       - run: env
       - run: echo $GITHUB_REPOSITORY
       - run: echo "${{env.GITHUB_REPOSITORY}}"
+
+  feature-branch-deploy:
+    name: Feature branch deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: Serhii.PerepeliukAQA
+          repo: hello-github-actions
+          run: echo $repo
