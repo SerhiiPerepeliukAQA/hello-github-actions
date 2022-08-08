@@ -11,3 +11,4 @@ jobs:
       - run: echo "Print all environment variables"
       - run: env
       - run: echo ${{env.GITHUB_REPOSITORY}}
+      - run: echo "${{env.GITHUB_REPOSITORY}}"
