@@ -14,3 +14,4 @@ jobs:
       - run: echo " Print a single environment variable (the commit SHA ) - ${{ github.sha }} "
       - run: echo "Print all environment variables"
       - run:  env
+      - run: enc.GITHUB_REPOSITORY
